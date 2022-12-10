@@ -5,17 +5,10 @@ import random
 import nltk
 import pandas as pd
 from pathlib import Path
-from sklearn import model_selection
 from numpy import mean
 import pickle
 
 current_path = Path.cwd()
-
-
-
-
-
-
 
 
 
@@ -80,6 +73,5 @@ if __name__=='__main__':
     if mode == 'train':
         sex_classifier.train()
     else:
-        
-        print(sex_classifier.infer('王雪姝'))
+        print(sex_classifier.infer('貂蝉'))
         exit()
